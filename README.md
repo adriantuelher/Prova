@@ -18,4 +18,4 @@ Aplicativo móvel desenvolvido em **Java** para a atividade prática da discipli
 ## 🚀 Como Executar
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/adriantuelher/Prova.git](https://github.com/adriantuelher/Prova.git)
+   git clone https://github.com/adriantuelher/Prova.git
