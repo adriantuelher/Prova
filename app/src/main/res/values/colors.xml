@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identidade Visual da Pizzaria -->
+    <color name="pizza_red_primary">#9E2A2B</color>
+    <color name="pizza_red_dark">#6E1B1D</color>
+    <color name="pizza_yellow_accent">#E09F3E</color>
+    <color name="pizza_background">#FFF8F0</color>
+    <color name="pizza_card_bg">#FFFFFF</color>
+    <color name="pizza_text_primary">#222222</color>
+    <color name="pizza_text_secondary">#666666</color>
+    <color name="pizza_price_green">#2A9D8F</color>
+</resources>
