@@ -8,16 +8,14 @@ public class Pizza implements Serializable {
     private double preco;
     private int imagemResId;
     private String tempoPreparo;
-    private String categoria;
 
-    public Pizza(int id, String nome, String ingredientes, double preco, int imagemResId, String tempoPreparo, String categoria) {
+    public Pizza(int id, String nome, String ingredientes, double preco, int imagemResId, String tempoPreparo) {
         this.id = id;
         this.nome = nome;
         this.ingredientes = ingredientes;
         this.preco = preco;
         this.imagemResId = imagemResId;
         this.tempoPreparo = tempoPreparo;
-        this.categoria = categoria;
     }
 
     public void setId(int id) {
@@ -44,7 +42,29 @@ public class Pizza implements Serializable {
         this.tempoPreparo = tempoPreparo;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+
+    public int getId() {
+        return id;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getIngredientes() {
+        return ingredientes;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getImagemResId() {
+        return imagemResId;
+    }
+
+    public String getTempoPreparo() {
+        return tempoPreparo;
+    }
+
 }

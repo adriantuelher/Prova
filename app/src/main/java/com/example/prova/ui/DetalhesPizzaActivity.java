@@ -19,6 +19,7 @@ public class DetalhesPizzaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhes_pizza);
 
+        // Mapeamento dos componentes de layout
         ImageView imgPizza = findViewById(R.id.imgDetalhePizza);
         TextView txtNome = findViewById(R.id.txtDetalheNome);
         TextView txtPreco = findViewById(R.id.txtDetalhePreco);
@@ -27,8 +28,10 @@ public class DetalhesPizzaActivity extends AppCompatActivity {
         Button btnVoltar = findViewById(R.id.btnVoltar);
         Button btnConfirmar = findViewById(R.id.btnConfirmarPedido);
 
+        // Recupera o objeto Pizza enviado pela Intent
         Pizza pizza = (Pizza) getIntent().getSerializableExtra("EXTRA_PIZZA");
 
+        // Preenche os dados na tela caso o objeto exista
         if (pizza != null) {
             imgPizza.setImageResource(pizza.getImagemResId());
             txtNome.setText(pizza.getNome());
@@ -37,8 +40,10 @@ public class DetalhesPizzaActivity extends AppCompatActivity {
             txtTempoPreparo.setText("⏱ Tempo estimado: " + pizza.getTempoPreparo());
         }
 
+        // Retorna à tela do cardápio
         btnVoltar.setOnClickListener(v -> finish());
 
+        // Confirma o pedido, exibe notificação e encerra a tela
         btnConfirmar.setOnClickListener(v -> {
             if (pizza != null) {
                 Toast.makeText(this, "Pedido de " + pizza.getNome() + " enviado para a cozinha!", Toast.LENGTH_LONG).show();
